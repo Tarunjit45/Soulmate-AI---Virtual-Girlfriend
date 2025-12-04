@@ -81,7 +81,7 @@ function App() {
       </main>
       
       <footer className="fixed bottom-0 w-full py-2 bg-slate-950/80 backdrop-blur text-center text-[10px] text-slate-600 border-t border-slate-900">
-        Powered by Gemini 2.5 Live API & Gemini 3.0 Pro
+        Powered by Gemini 2.5 Live API & Gemini 3.0 Pro • Built by Tarunjit
       </footer>
     </div>
   );
