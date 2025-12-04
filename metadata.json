@@ -1,0 +1,8 @@
+{
+  "name": "Soulmate AI - Virtual Girlfriend",
+  "description": "A multimodal AI companion that can see, hear, and emotionally connect with you in Bengali, Hindi, and English.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
