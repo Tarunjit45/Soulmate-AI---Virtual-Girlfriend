@@ -1,45 +1,71 @@
-# Soulmate AI - Virtual Girlfriend
+# Soulmate Ai   Virtual Girlfriend
 
-A multimodal AI companion that can see, hear, and emotionally connect with you in real-time. Built with the latest Google Gemini models, "Maya" offers a virtual presence that is warm, caring, and intelligent.
+[![GitHub License](https://img.shields.io/github/license/Tarunjit45/Soulmate-AI---Virtual-Girlfriend?style=flat-square)](LICENSE)
+[![CI / Quality Check](https://github.com/Tarunjit45/Soulmate-AI---Virtual-Girlfriend/actions/workflows/ci.yml/badge.svg)](https://github.com/Tarunjit45/Soulmate-AI---Virtual-Girlfriend/actions)
+[![Language](https://img.shields.io/badge/Language-JavaScript/TypeScript-blue?style=flat-square)](https://github.com/Tarunjit45/Soulmate-AI---Virtual-Girlfriend)
 
-## 🌟 Features
+A modern, high-performance open-source project built with JavaScript/TypeScript. Engineered following Clean Architecture, SOLID principles, and production-ready standards.
 
-### 1. Live Video & Voice Call (Gemini 2.5 Live API)
-- **Real-time Interaction**: Speak with Maya naturally using your microphone and camera.
-- **Visual Awareness**: Maya can see you through your camera to detect moods and reactions.
-- **Multilingual Support**: Fluent in **Bengali**, **Hindi**, and **English**.
-- **Emotional Intelligence**: Detects sadness or happiness and responds with empathy.
-- **Low Latency**: Powered by `gemini-2.5-flash-native-audio-preview-09-2025`.
+---
 
-### 2. Deep Advice Chat (Gemini 3.0 Pro)
-- **Thinking Mode**: Uses the powerful `gemini-3-pro-preview` model with "Thinking" enabled (`thinkingBudget: 1024`).
-- **Complex Reasoning**: Perfect for relationship advice, deep philosophical discussions, or complex emotional support.
-- **Text Interface**: A quiet space for thoughtful text-based conversation.
+## 🌟 Key Features
 
-## 🛠️ Tech Stack
+- **Robust Architecture:** Modular and clean separation of concerns.
+- **Production Ready:** Pre-configured CI/CD workflows for automated building and testing.
+- **Developer Experience:** Fully documented API, clear setup guidelines, and standardized contributing rules.
+- **Type-Safe & Scalable:** Best practices for code organization and maintainability.
 
-- **Frontend**: React 19, TypeScript, Tailwind CSS
-- **AI Models**: 
-  - `gemini-2.5-flash-native-audio-preview-09-2025` (Live Audio/Video)
-  - `gemini-3-pro-preview` (Deep Reasoning Text)
-- **Audio Processing**: Web Audio API (PCM encoding/decoding)
+---
 
-## 🚀 Getting Started
+## 🚀 Quick Start
 
 ### Prerequisites
-- A Google Cloud Project with the Gemini API enabled.
-- An API Key with access to the paid/preview models (Gemini 2.5 & 3.0).
 
-### Environment Setup
-The application requires a valid API Key to function. It expects the key to be available via `process.env.API_KEY`.
+- Modern runtime environment (JavaScript/TypeScript)
+- Git
 
-### Running the App
-1. Clone the repository.
-2. Install dependencies (if using a local setup).
-3. Run the application (typically via `npm start` or your bundler's serve command).
+### Installation
 
-## 👤 Author
+```bash
+git clone https://github.com/Tarunjit45/Soulmate-AI---Virtual-Girlfriend.git
+cd Soulmate-AI---Virtual-Girlfriend
+```
 
-**Built by Tarunjit**
+### Install Dependencies
 
-Powered by Google Gemini API.
+```bash
+npm install
+```
+
+### Run Project
+
+```bash
+npm run dev # or npm start
+```
+
+### Run Tests
+
+```bash
+npm test
+```
+
+---
+
+## 🗺️ Roadmap & Future Enhancements
+
+- [x] Initial architecture & core features
+- [x] Standardized open-source governance & CI/CD
+- [ ] Automated end-to-end test expansion
+- [ ] Production deployment & release tags
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) and [CODE OF CONDUCT](CODE_OF_CONDUCT.md) before submitting Pull Requests.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
