@@ -1,72 +1,99 @@
-# 🚀 Soulmate-AI---Virtual-Girlfriend
+# 💖 Soulmate AI — Multimodal Empathetic Companion
 
-![Language](https://img.shields.io/badge/Language-TypeScript-blue?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
-![Status](https://img.shields.io/badge/Production-Active-success?style=for-the-badge)
+[![React](https://img.shields.io/badge/React-18+-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://typescriptlang.org/)
+[![Google Gemini](https://img.shields.io/badge/Vision_%26_Audio-Gemini%20Multimodal-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev/)
+[![Multilingual](https://img.shields.io/badge/Languages-Bengali_%7C_Hindi_%7C_English-FF69B4?style=for-the-badge)](README.md)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-## 📌 Overview
+**Soulmate AI** is an empathetic, multimodal AI companion application capable of seeing, hearing, and connecting emotionally across **Bengali, Hindi, and English**. Built with **React 18**, **TypeScript**, and the **Google Gemini Multimodal API**, Soulmate AI combines live camera video streaming, voice transcription, and contextual chat to foster warmth, companionship, and genuine emotional connection.
 
-Your Virtual Girlfriend
+---
 
-## ✨ Key Features & Architecture
+## ✨ Features
 
-- **High-Performance Codebase:** Built using `TypeScript` and modern engineering principles.
-- **Modular & Scalable Design:** Structured directory tree for seamless development and deployment.
-- **Modern Responsive Styling:** Custom UI design system engineered for mobile & desktop clarity.
+* 👁️ **Live Video Perception (`LiveView.tsx`):** Real-time webcam perception allowing the companion to see your expressions, surroundings, and reactions.
+* 🎙️ **Voice & Audio Conversation:** Speak naturally; integrated microphone ingestion allows hands-free emotional dialogue.
+* 🌐 **Trilingual Empathy:** Seamless natural language understanding across **Bengali (বাংলা)**, **Hindi (हिन्दी)**, and **English**.
+* 💬 **Deep Conversational Mode (`DeepChat.tsx`):** Long-form reflective conversations, emotional check-ins, and active listening.
 
-## 🛠️ Tech Stack & Dependencies
+---
 
-- **Core Language:** `TypeScript`
-- **Libraries & Tools:** React 18, Vite, Tailwind CSS, TypeScript
-- **Deployment Infrastructure:** Vercel Edge / Cloud Services
+## 🛠️ Architecture & Tech Stack
 
-## 📁 Architecture & File Layout
+```
++-------------------------------------------------------------+
+|                      Soulmate React Client                  |
+|         (React 18, TypeScript, Tailwind, Lucide React)      |
++-------------------------------------------------------------+
+               |                               |
+               v (Live Camera Stream)          v (Microphone Audio)
++-----------------------------+ +-----------------------------+
+|     `components/LiveView`   | |     `components/DeepChat`   |
++-----------------------------+ +-----------------------------+
+               |                               |
+               +---------------+---------------+
+                               |
+                               v
++-------------------------------------------------------------+
+|                Gemini Multimodal Live API                   |
+|       Vision + Audio Streaming + Trilingual Prompt Layer    |
++-------------------------------------------------------------+
+```
+
+* **Frontend:** React 18, TypeScript, Tailwind CSS.
+* **AI Model:** Google Gemini Multimodal API (`@google/genai`).
+* **Tooling:** Vite, ESLint.
+
+---
+
+## 📁 Repository Structure
 
 ```text
 Soulmate-AI---Virtual-Girlfriend/
-├── .github
-├── .github/ISSUE_TEMPLATE
-├── .github/ISSUE_TEMPLATE/bug_report.md
-├── .github/ISSUE_TEMPLATE/feature_request.md
-├── .github/PULL_REQUEST_TEMPLATE.md
-├── .github/workflows
-├── .github/workflows/ci.yml
-├── .gitignore
-├── App.tsx
-├── CODE_OF_CONDUCT.md
-├── CONTRIBUTING.md
-├── LICENSE
-├── README.md
-├── components
-├── components/AudioVisualizer.tsx
-└── ... [additional codebase files]
+├── App.tsx             # Main view switcher (Live Video Mode vs. Deep Chat Mode)
+├── index.tsx           # React bootstrap entry
+├── index.html          # HTML shell with media capture permissions
+├── components/
+│   ├── LiveView.tsx    # Live camera view & visual perception HUD
+│   └── DeepChat.tsx    # Long-form conversational interface
+├── types.ts            # Application modes & dialogue type schemas
+├── utils/              # Audio / Video streaming helpers
+├── metadata.json       # Project manifest
+├── package.json        # Dependencies & scripts
+├── LICENSE             # MIT License
+└── README.md
 ```
 
-## 🚀 Quickstart & Installation
+---
 
-### Prerequisites
-- Node.js (v18.0.0 or higher)
-- npm or yarn package manager
+## 🚀 Quick Start
 
-### Setup Instructions
+### 1. Installation
+Clone the repository and install dependencies:
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/Tarunjit45/Soulmate-AI---Virtual-Girlfriend.git
-   cd Soulmate-AI---Virtual-Girlfriend
-   ```
+```bash
+git clone https://github.com/Tarunjit45/Soulmate-AI---Virtual-Girlfriend.git
+cd Soulmate-AI---Virtual-Girlfriend
 
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
+npm install
+```
 
-3. **Launch development server:**
-   ```bash
-   npm run dev
-   ```
+### 2. Configure Environment
+Create a `.env` file:
 
-## 📜 Author & License
+```env
+VITE_GEMINI_API_KEY=your_gemini_api_key_here
+```
 
-Architected & Developed by **[Tarunjit Biswas](https://github.com/Tarunjit45)**.  
-Distributed under the **MIT License**.
+### 3. Run Development Server
+```bash
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) and allow camera and microphone permissions when prompted.
+
+---
+
+## 📄 License
+This project is licensed under the [MIT License](LICENSE).
